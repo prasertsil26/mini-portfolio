@@ -157,7 +157,7 @@ li {
   margin: 0 auto;
   border-radius: 50%;
   border: 6px solid var(--white);
-  box-shadow: 0 6px 20px rgba(15, 42, 92, 0.2);
+  box-shadow: 0 6px 20px rgba(15, 42, 92, 0.632);
   background-color: #cbd5e1;
 }
 
@@ -214,9 +214,6 @@ li {
   padding: 24px;
 }
 
-.card:hover {
-  box-shadow: 0 8px 20px rgba(15, 42, 92, 0.16);
-}
 
 .project-card {
   padding: 0;
@@ -298,10 +295,6 @@ li {
   border-color: var(--blue);
 }
 
-.note {
-  font-size: 14px;
-  color: var(--muted);
-}
 
 .site-footer {
   background-color: var(--navy);
