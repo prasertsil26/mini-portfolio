@@ -1,13 +1,13 @@
 /*  ตัวแปรสีกลาง */
 :root {
---navy: #0f2a5c;
---blue: #2f6bff;
+--navy-color: #0f2a5c;
+--blue-color: #2f6bff;
 --blue-dark: #1d4ed8;
---bg: #f3f7ff;
---white: #ffffff;
---text: #1f2937;
---muted: #4b5563;
---line: #c9d8f5;
+--bg-color: #f3f7ff;
+--white-color: #ffffff;
+--text-color: #1f2937;
+--muted-color: #4b5563;
+--line-color: #c9d8f5;
 }
 
 /*  รีเซ็ตค่าเริ่มต้นทั้งหน้า */
@@ -20,8 +20,8 @@ box-sizing: border-box;
 /*  รูปแบบหลักของหน้าเว็บ */
 body {
 font-family: "Kanit", Tahoma, Geneva, Verdana, sans-serif;
-background-color: var(--bg);
-color: var(--text);
+background-color: var(--bg-color);
+color: var(--text-color);
 line-height: 1.6;
 min-height: 100vh;
 display: flex;
@@ -41,12 +41,12 @@ color: var(--blue-dark);
 }
 
 a:hover {
-color: var(--navy);
+color: var(--navy-color);
 }
 
 /*  ส่วนหัวของหน้า */
 .site-header {
-background-color: var(--navy);
+background-color: var(--navy-color);
 padding: 14px 40px;
 display: flex;
 justify-content: space-between;
@@ -56,14 +56,14 @@ gap: 12px;
 }
 
 .brand {
-color: var(--white);
+color: var(--white-color);
 text-decoration: none;
 font-size: 22px;
 font-weight: 600;
 }
 
 .brand:hover {
-color: var(--white);
+color: var(--white-color);
 }
 
 .nav-list {
@@ -74,7 +74,7 @@ gap: 8px;
 }
 
 .nav-list a {
-color: var(--white);
+color: var(--white-color);
 text-decoration: none;
 padding: 8px 16px;
 border-radius: 8px;
@@ -84,12 +84,12 @@ transition: background-color 0.2s;
 
 .nav-list a:hover {
 background-color: rgba(255, 255, 255, 0.2);
-color: var(--white);
+color: var(--white-color);
 }
 
 .nav-list a.active {
-background-color: var(--blue);
-color: var(--white);
+background-color: var(--blue-color);
+color: var(--white-color);
 }
 
 /*  เนื้อหาหลัก */
@@ -109,7 +109,7 @@ margin-bottom: 48px;
 h1 {
 font-size: clamp(1.9rem, 5vw, 3rem);
 line-height: 1.25;
-color: var(--navy);
+color: var(--navy-color);
 margin-bottom: 12px;
 }
 
@@ -119,13 +119,13 @@ white-space: nowrap;
 
 h2 {
 font-size: 1.7rem;
-color: var(--navy);
+color: var(--navy-color);
 margin-bottom: 16px;
 }
 
 h3 {
 font-size: 1.2rem;
-color: var(--navy);
+color: var(--navy-color);
 margin-bottom: 8px;
 }
 
@@ -165,7 +165,7 @@ aspect-ratio: 1 / 1;
 object-fit: cover;
 margin: 0 auto;
 border-radius: 50%;
-border: 6px solid var(--white);
+border: 6px solid var(--white-color);
 box-shadow: 0 6px 20px rgba(15, 42, 92, 0.632);
 background-color: #cbd5e1;
 }
@@ -184,9 +184,9 @@ font-family: inherit;
 font-size: 16px;
 font-weight: 600;
 text-decoration: none;
-color: var(--white);
-background-color: var(--blue);
-border: 2px solid var(--blue);
+color: var(--white-color);
+background-color: var(--blue-color);
+border: 2px solid var(--blue-color);
 border-radius: 10px;
 padding: 10px 24px;
 cursor: pointer;
@@ -196,7 +196,7 @@ transition: background-color 0.2s;
 .btn:hover {
 background-color: var(--blue-dark);
 border-color: var(--blue-dark);
-color: var(--white);
+color: var(--white-color);
 }
 
 .btn-outline {
@@ -224,8 +224,8 @@ gap: 24px;
 }
 
 .card {
-background-color: var(--white);
-border: 1px solid var(--line);
+background-color: var(--white-color);
+border: 1px solid var(--line-color);
 border-radius: 14px;
 box-shadow: 0 4px 12px rgba(15, 42, 92, 0.08);
 padding: 24px;
@@ -259,7 +259,7 @@ gap: 8px;
 
 .tag-list li {
 background-color: #dbe7ff;
-color: var(--navy);
+color: var(--navy-color);
 border-radius: 999px;
 padding: 2px 12px;
 font-size: 14px;
@@ -279,21 +279,21 @@ margin-bottom: 32px;
 .sub-menu a {
 display: inline-block;
 padding: 6px 16px;
-border: 1px solid var(--blue);
+border: 1px solid var(--blue-color);
 border-radius: 999px;
 text-decoration: none;
 }
 
 .sub-menu a:hover {
-background-color: var(--blue);
-color: var(--white);
+background-color: var(--blue-color);
+color: var(--white-color);
 }
 
 
 /* ส่วนท้ายของหน้า */
 .site-footer {
-background-color: var(--navy);
-color: var(--white);
+background-color: var(--navy-color);
+color: var(--white-color);
 padding: 18px 40px;
 display: flex;
 justify-content: space-between;
